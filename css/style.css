@@ -342,3 +342,51 @@
     height: 400px;
   }
 }
+
+@media (max-width: 576px) {
+  .text {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .intro-btn {
+    margin-left: 80px;
+  }
+
+  .preview {
+    padding-top: 40px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    height: 1200px;
+  }
+
+  .gallery-1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .gallery-2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .gallery-3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .gallery-4 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 400px;
+    width: 100%;
+  }
+}
