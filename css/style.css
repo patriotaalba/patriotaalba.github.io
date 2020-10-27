@@ -12,8 +12,10 @@ html {
 .navbar {
   display: grid;
   position: fixed;
+  border-bottom: 2px solid white;
   z-index: 1;
-  background-color: #bd0052;
+  background-color: #101b5c;
+  opacity: 0.9;
   height: 80px;
   width: 100%;
   justify-content: space-around;
@@ -28,7 +30,7 @@ html {
 
 .navbar .left-side {
   grid-area: left-side;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "pacifico";
   font-size: 36px;
 }
 
@@ -89,7 +91,7 @@ html {
   width: 120px;
   height: 40px;
   line-height: 40px;
-  background-color: #bd0052;
+  background-color: #101b5c;
   opacity: 1;
   border-radius: 40px;
   text-align: center;
@@ -107,8 +109,9 @@ html {
 
 .header .jumbotron {
   display: flex;
-  background-color: black;
-  opacity: 0.9;
+  /* background-color: black; */
+  background-image: url(../img/wood-pattern.jpg);
+  /* opacity: 0.9; */
   height: 970px;
   place-items: center;
   place-content: center;
@@ -119,9 +122,18 @@ html {
   color: white;
 }
 
+.text img {
+  /* border-radius: 100%; */
+  border-radius: 100px 20px 100px 20px;
+  filter: brightness(0.6);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  margin-bottom: 40px;
+}
+
 .intro-btn {
   display: flex;
-  background-color: #bd0052;
+  background-color: #101b5c;
   width: 120px;
   height: 40px;
   border-radius: 40px;
@@ -163,7 +175,7 @@ html {
 
 .skills ul li {
   margin-bottom: 10px;
-  background-color: #bd0052;
+  background-color: #101b5c;
   text-align: center;
   padding: 10px;
   border-radius: 20px;
@@ -201,8 +213,8 @@ html {
 .gallery {
   display: flex;
   height: 650px;
-  background-color: black;
-  opacity: 0.9;
+  background-image: linear-gradient(black, #101b5c);
+  /* opacity: 0.9; */
   justify-content: space-evenly;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
@@ -210,7 +222,7 @@ html {
 
 .gallery-1 {
   background-image: url(../img/project1.JPG);
-  border-radius: 20px;
+  border-radius: 4px;
   height: 250px;
   width: 400px;
   background-size: cover;
@@ -220,7 +232,7 @@ html {
 
 .gallery-2 {
   background-image: url(../img/project2.JPG);
-  border-radius: 20px;
+  border-radius: 4px;
   height: 250px;
   width: 400px;
   background-size: cover;
@@ -230,7 +242,7 @@ html {
 
 .gallery-3 {
   background-image: url(../img/project3.JPG);
-  border-radius: 20px;
+  border-radius: 4px;
   height: 250px;
   width: 400px;
   background-size: cover;
@@ -240,7 +252,7 @@ html {
 
 .gallery-4 {
   background-image: url(../img/project4.JPG);
-  border-radius: 20px;
+  border-radius: 4px;
   height: 250px;
   width: 400px;
   background-size: cover;
@@ -251,7 +263,7 @@ html {
 .gallery a {
   text-decoration: none;
   color: white;
-  background-color: #bd0052;
+  background-color: #101b5c;
   padding: 10px;
   border-radius: 5px;
 }
@@ -263,7 +275,7 @@ html {
   box-sizing: border-box;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  background-color: #bd0052;
+  background-image: linear-gradient(white, darkgrey);
   /* background-image: url(../img/pattern.png); */
 }
 
@@ -304,7 +316,7 @@ html {
 
   .res-nav {
     display: flex;
-    background-color: #bd0052;
+    background-color: #101b5c;
     position: absolute;
     right: 0;
     top: 78px;
@@ -330,7 +342,7 @@ html {
 
   .skills {
     display: block;
-    padding-bottom: 40px;
+    /* padding-bottom: 80px; */
   }
 
   .skills ul {
@@ -359,6 +371,10 @@ html {
   .about {
     margin-top: 30%;
     border-radius: 0;
+  }
+
+  .preview {
+    margin-top: 140px;
   }
 
   /* --- */
@@ -411,12 +427,24 @@ html {
     margin-left: 80px;
   }
 
+  .skills ul {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .skills h1 {
+    font-size: 24px;
+  }
+
   .preview {
     padding-top: 40px;
+    font-size: 12px;
   }
 
   .gallery {
     flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
     height: 1200px;
   }
 
@@ -425,6 +453,7 @@ html {
     margin-bottom: 40px;
     height: 400px;
     width: 100%;
+    border-radius: 4px;
   }
 
   .gallery-2 {
@@ -432,6 +461,7 @@ html {
     margin-bottom: 40px;
     height: 400px;
     width: 100%;
+    border-radius: 4px;
   }
 
   .gallery-3 {
@@ -439,6 +469,7 @@ html {
     margin-bottom: 40px;
     height: 400px;
     width: 100%;
+    border-radius: 4px;
   }
 
   .gallery-4 {
@@ -446,6 +477,7 @@ html {
     margin-bottom: 60px;
     height: 400px;
     width: 100%;
+    border-radius: 4px;
   }
 
   .about {
@@ -455,6 +487,10 @@ html {
 
   .close-btn {
     margin-top: 80px;
+  }
+
+  .navbar .left-side {
+    font-size: 32px;
   }
 }
 
